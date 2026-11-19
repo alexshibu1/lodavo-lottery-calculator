@@ -1,0 +1,18 @@
+---
+// Demo index only. Not part of the port.
+import '../styles/global.css';
+import { CONFIG, LOCALE_LIST } from '../i18n/lottery';
+---
+<!doctype html>
+<html lang="en-CA">
+  <head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="robots" content="noindex" /><title>Lodavo lottery calculator (demo build)</title><link rel="icon" href="/favicon.svg" /></head>
+  <body class="min-h-dvh bg-paper p-6">
+    <main class="mx-auto max-w-xl py-16">
+      <h1 class="text-3xl font-black tracking-tight text-ink">Lottery calculator, demo build</h1>
+      <p class="mt-3 text-ink/75">Three locales, one tool. This index page is not part of the port.</p>
+      <ul class="mt-6 space-y-3">
+        {LOCALE_LIST.map((l) => <li><a class="font-semibold text-brand underline" href={CONFIG[l].path}>{CONFIG[l].path}</a></li>)}
+      </ul>
+    </main>
+  </body>
+</html>

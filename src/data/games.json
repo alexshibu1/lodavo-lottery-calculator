@@ -1,0 +1,160 @@
+{
+  "_readme": "Every value below was read from the official operator page listed in `sources` on `verified_on`. Do not edit a number without re-checking its source and updating verified_on. Odds are jackpot/top-prize odds per single play at the listed price.",
+  "verified_on": "2026-11-14",
+  "games": [
+    {
+      "id": "lottomax",
+      "name": "Lotto Max",
+      "name_fr": "Lotto Max",
+      "locales": ["en-ca", "fr-ca"],
+      "currency": "CAD",
+      "price_per_play": 6,
+      "jackpot_odds": 33446140,
+      "draws_per_week": 2,
+      "draw_days": ["Tuesday", "Friday"],
+      "notes": "One $6 play is 4 sets of seven numbers from 1 to 52. Odds are the operator's stated main-jackpot odds per $6 play.",
+      "sources": [
+        {
+          "label": "OLG, About Lotto Max",
+          "url": "https://www.olg.ca/en/lottery/play-lotto-max-encore/about.html",
+          "confirms": ["price_per_play", "jackpot_odds", "draw_days"]
+        },
+        {
+          "label": "BCLC, Jackpot facts (updated April 27, 2026)",
+          "url": "https://corporate.bclc.com/content/dam/bclccorporate/documents/fact-sheets/fact-sheet-jackpot-facts-2025.pdf",
+          "confirms": ["price_per_play", "jackpot_odds"]
+        }
+      ],
+      "verified_on": "2026-11-14"
+    },
+    {
+      "id": "lotto649",
+      "name": "Lotto 6/49",
+      "name_fr": "Lotto 6/49",
+      "locales": ["en-ca", "fr-ca"],
+      "currency": "CAD",
+      "price_per_play": 3,
+      "jackpot_odds": 13983816,
+      "draws_per_week": 2,
+      "draw_days": ["Wednesday", "Saturday"],
+      "notes": "Odds are for the Classic Draw jackpot (6/6). Each play also carries a Gold Ball Draw number; the operators state those odds depend on tickets sold, so they are not modelled here.",
+      "sources": [
+        {
+          "label": "Loto-Québec, Lotto 6/49",
+          "url": "https://loteries.lotoquebec.com/en/lotteries/lotto-6-49",
+          "confirms": ["price_per_play", "jackpot_odds", "draw_days"]
+        },
+        {
+          "label": "OLG, Lotto 6/49 odds and payouts",
+          "url": "https://www.olg.ca/en/lottery/play-lotto-649-encore/past-results.html",
+          "confirms": ["price_per_play", "jackpot_odds"]
+        }
+      ],
+      "verified_on": "2026-11-14"
+    },
+    {
+      "id": "dailygrand",
+      "name": "Daily Grand",
+      "name_fr": "Grande Vie",
+      "locales": ["en-ca", "fr-ca"],
+      "currency": "CAD",
+      "price_per_play": 3,
+      "jackpot_odds": 13348188,
+      "draws_per_week": 2,
+      "draw_days": ["Monday", "Thursday"],
+      "notes": "Odds are for the top prize (5/5 plus the Grand Number). Sold as Grande Vie in Quebec.",
+      "sources": [
+        {
+          "label": "OLG, About Daily Grand",
+          "url": "https://www.olg.ca/en/lottery/play-daily-grand-encore/about.html",
+          "confirms": ["price_per_play", "draw_days"]
+        },
+        {
+          "label": "OLG, Daily Grand odds and payouts",
+          "url": "https://www.olg.ca/en/lottery/play-daily-grand-encore/past-results.html",
+          "confirms": ["jackpot_odds"]
+        },
+        {
+          "label": "Loto-Québec, Grande Vie",
+          "url": "https://loteries.lotoquebec.com/en/lotteries/grande-vie",
+          "confirms": ["price_per_play", "jackpot_odds", "draw_days"]
+        }
+      ],
+      "verified_on": "2026-11-14"
+    },
+    {
+      "id": "powerball",
+      "name": "Powerball",
+      "name_fr": "Powerball",
+      "locales": ["en-us"],
+      "currency": "USD",
+      "price_per_play": 2,
+      "jackpot_odds": 292201338,
+      "draws_per_week": 3,
+      "draw_days": ["Monday", "Wednesday", "Saturday"],
+      "notes": "Base $2 play without Power Play. In Idaho and Montana the minimum purchase is $3 because Power Play is bundled.",
+      "sources": [
+        {
+          "label": "Powerball.com",
+          "url": "https://www.powerball.com/",
+          "confirms": ["price_per_play", "draw_days"]
+        },
+        {
+          "label": "Powerball.com, Prize chart",
+          "url": "https://www.powerball.com/powerball-prize-chart",
+          "confirms": ["jackpot_odds"]
+        }
+      ],
+      "verified_on": "2026-11-14"
+    },
+    {
+      "id": "megamillions",
+      "name": "Mega Millions",
+      "name_fr": "Mega Millions",
+      "locales": ["en-us"],
+      "currency": "USD",
+      "price_per_play": 5,
+      "jackpot_odds": 290472336,
+      "draws_per_week": 2,
+      "draw_days": ["Tuesday", "Friday"],
+      "notes": "$5 per play since the April 8, 2025 drawing, multiplier included.",
+      "sources": [
+        {
+          "label": "MegaMillions.com, How to play",
+          "url": "https://www.megamillions.com/How-to-Play.aspx",
+          "confirms": ["price_per_play", "jackpot_odds"]
+        },
+        {
+          "label": "MegaMillions.com, FAQs",
+          "url": "https://www.megamillions.com/FAQs.aspx",
+          "confirms": ["price_per_play", "draw_days"]
+        }
+      ],
+      "verified_on": "2026-11-14"
+    }
+  ],
+  "support": {
+    "en-ca": {
+      "label": "Find your provincial gambling helpline",
+      "url": "https://responsiblegambling.org/for-the-public/problem-gambling-help/help-for-canadians/",
+      "operator": "Responsible Gambling Council (independent non-profit; lists each province's official helpline)",
+      "verified_on": "2026-11-14"
+    },
+    "fr-ca": {
+      "label": "Jeu : aide et référence",
+      "phone": "1 800 461-0140",
+      "url": "https://aidejeu.ca/",
+      "operator": "Jeu : aide et référence, funded by Quebec's Ministère de la Santé et des Services sociaux; number confirmed on quebec.ca",
+      "confirm_url": "https://www.quebec.ca/en/health/advice-and-prevention/alcohol-drugs-gambling",
+      "verified_on": "2026-11-14"
+    },
+    "en-us": {
+      "label": "National Problem Gambling Helpline",
+      "phone": "1-800-MY-RESET",
+      "url": "https://www.ncpgambling.org/help-treatment/",
+      "operator": "National Council on Problem Gambling. Note: 1-800-GAMBLER stopped being the national number on September 29, 2025.",
+      "confirm_url": "https://www.ncpgambling.org/helpline-stakeholder-faq/",
+      "verified_on": "2026-11-14"
+    }
+  }
+}
