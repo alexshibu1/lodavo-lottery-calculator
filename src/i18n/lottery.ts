@@ -7,8 +7,8 @@
  * Do not add odds or prize comparisons between Lodavo and any lottery.
  */
 
-export type Locale = 'en-ca' | 'fr-ca' | 'en-us';
-export const LOCALE_LIST: Locale[] = ['en-ca', 'fr-ca', 'en-us'];
+export type Locale = 'en-ca' | 'fr-ca';
+export const LOCALE_LIST: Locale[] = ['en-ca', 'fr-ca'];
 
 export interface Preset {
   id: string;
@@ -86,27 +86,6 @@ export const CONFIG: Record<Locale, LocaleConfig> = {
       { label: 'Défi d’épargne de 52 semaines', href: '/fr-ca/outils/defi-epargne-52-semaines' },
       { label: 'L’épargne liée à des prix au Canada', href: '/fr-ca/blogue/epargne-liee-a-des-prix-canada' },
       { label: 'Glossaire de l’épargne', href: '/fr-ca/blogue/glossaire-epargne' },
-    ],
-  },
-  'en-us': {
-    locale: 'en-us', htmlLang: 'en-US', ogLocale: 'en_US', intl: 'en-US', currency: 'USD',
-    path: '/en-us/tools/lottery-calculator', home: '/en-us', toolsHub: null,
-    defaultGame: 'powerball', games: ['powerball', 'megamillions'],
-    presets: [
-      { id: 'five', label: '$5 a week', mode: 'spend', spend: 5, years: 10 },
-      { id: 'twenty', label: '$20 a week', mode: 'spend', spend: 20, years: 10 },
-      { id: 'pool', label: 'The office pool', mode: 'spend', spend: 10, years: 20 },
-      { id: 'everydraw', label: 'Every draw for 10 years', mode: 'game', game: 'powerball', tickets: 1, years: 10 },
-      { id: 'lifetime', label: 'Mega Millions for 40 years', mode: 'game', game: 'megamillions', tickets: 1, years: 40 },
-      { id: 'fifty', label: '$50 a week', mode: 'spend', spend: 50, years: 10 },
-    ],
-    cta: { kind: 'waitlist', href: '/en-us#waitlist' },
-    provablyFair: '/en-us/provably-fair', contestRules: null,
-    related: [
-      { label: 'What is prize-linked savings?', href: '/en-us/blog/prize-linked-savings' },
-      { label: 'How Lodavo works', href: '/en-us#how-it-works' },
-      { label: 'Provably fair draws', href: '/en-us/provably-fair' },
-      { label: 'In Canada? See the Canadian calculator', href: '/en-ca/tools/lottery-calculator' },
     ],
   },
 };
@@ -401,4 +380,4 @@ const fr: Copy = {
   support: { text: 'Si le jeu vous cause des problèmes, à vous ou à un proche, de l’aide gratuite et confidentielle est offerte 24 heures sur 24, partout au Québec.' },
 };
 
-export const COPY: Record<Locale, Copy> = { 'en-ca': en(false), 'fr-ca': fr, 'en-us': en(true) };
+export const COPY: Record<Locale, Copy> = { 'en-ca': en(false), 'fr-ca': fr };

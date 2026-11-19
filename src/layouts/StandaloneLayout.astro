@@ -11,22 +11,17 @@ const { locale } = Astro.props;
 const c = COPY[locale];
 const cfg = CONFIG[locale];
 const O = 'https://www.lodavo.com';
-const isFr = locale === 'fr-ca';
-const us = locale === 'en-us';
+const isFr = locale === ‘fr-ca’;
 const canonical = abs(cfg.path);
 const ogImage = abs(`/og/lottery-calculator-${locale}.png`);
 const nav = isFr
-  ? [['Comment ça fonctionne', '/fr-ca#how-it-works'], ['Numéros gagnants', '/fr-ca/numeros-gagnants'], ['Vérification équitable', '/fr-ca/verification-equitable'], ['À propos', '/fr-ca/a-propos'], ['Apprendre', '/fr-ca/blogue']]
-  : us
-    ? [['How it works', '/en-us#how-it-works'], ['Provably fair', '/en-us/provably-fair'], ['About us', '/en-us/about-us'], ['Learn', '/en-us/blog']]
-    : [['How it works', '/en-ca#how-it-works'], ['Winning numbers', '/en-ca/winning-numbers'], ['Provably fair', '/en-ca/provably-fair'], ['About us', '/en-ca/about-us'], ['Learn', '/en-ca/blog']];
-const navCta = isFr ? 'Télécharger Lodavo' : us ? 'Join the waitlist' : 'Download Lodavo';
+  ? [[‘Comment ça fonctionne’, ‘/fr-ca#how-it-works’], [‘Numéros gagnants’, ‘/fr-ca/numeros-gagnants’], [‘Vérification équitable’, ‘/fr-ca/verification-equitable’], [‘À propos’, ‘/fr-ca/a-propos’], [‘Apprendre’, ‘/fr-ca/blogue’]]
+  : [[‘How it works’, ‘/en-ca#how-it-works’], [‘Winning numbers’, ‘/en-ca/winning-numbers’], [‘Provably fair’, ‘/en-ca/provably-fair’], [‘About us’, ‘/en-ca/about-us’], [‘Learn’, ‘/en-ca/blog’]];
+const navCta = isFr ? ‘Télécharger Lodavo’ : ‘Download Lodavo’;
 const foot = isFr
-  ? { tag: 'Épargnez. Obtenez des billets. Gagnez des prix.', cols: [['Entreprise', [['À propos', '/fr-ca/a-propos'], ['Sécurité', '/fr-ca/securite'], ['Nous joindre', '/fr-ca/nous-joindre']]], ['Apprendre', [['Blogue', '/fr-ca/blogue'], ['Outils d’épargne', '/fr-ca/outils'], ['Normes éditoriales', '/fr-ca/normes-editoriales']]], ['Mentions légales', [['Conditions d’utilisation', '/fr-ca/conditions-dutilisation'], ['Politique de confidentialité', '/fr-ca/politique-de-confidentialite'], ['Règles du concours', '/fr-ca/regles-du-concours']]]], rights: '© 2026 Lodavo. Tous droits réservés.', lang: 'Langue et région' }
-  : us
-    ? { tag: 'Save money. Earn tickets. Win prizes.', cols: [['Company', [['About us', '/en-us/about-us'], ['Security', '/en-us/security'], ['Contact us', '/en-us/contact-us']]], ['Learn', [['Blog', '/en-us/blog'], ['Editorial standards', '/en-us/editorial-standards'], ['FAQ', '/en-us#faq']]], ['Legal', [['Privacy notice', '/en-us/privacy']]]], rights: '© 2026 Lodavo. All rights reserved.', lang: 'Language and region' }
-    : { tag: 'Save money. Earn tickets. Win prizes.', cols: [['Company', [['About us', '/en-ca/about-us'], ['Security', '/en-ca/security'], ['Contact us', '/en-ca/contact-us']]], ['Learn', [['Blog', '/en-ca/blog'], ['Savings tools', '/en-ca/tools'], ['Editorial standards', '/en-ca/editorial-standards']]], ['Legal', [['Terms and Conditions', '/en-ca/terms-and-conditions'], ['Privacy Policy', '/en-ca/privacy-policy'], ['Contest Rules', '/en-ca/contest-rules']]]], rights: '© 2026 Lodavo. All rights reserved.', lang: 'Language and region' };
-const langNames: Record<Locale, string> = { 'en-ca': 'Canada · English', 'fr-ca': 'Canada · Français', 'en-us': 'United States · English' };
+  ? { tag: ‘Épargnez. Obtenez des billets. Gagnez des prix.’, cols: [[‘Entreprise’, [[‘À propos’, ‘/fr-ca/a-propos’], [‘Sécurité’, ‘/fr-ca/securite’], [‘Nous joindre’, ‘/fr-ca/nous-joindre’]]], [‘Apprendre’, [[‘Blogue’, ‘/fr-ca/blogue’], [‘Outils d’épargne’, ‘/fr-ca/outils’], [‘Normes éditoriales’, ‘/fr-ca/normes-editoriales’]]], [‘Mentions légales’, [[‘Conditions d’utilisation’, ‘/fr-ca/conditions-dutilisation’], [‘Politique de confidentialité’, ‘/fr-ca/politique-de-confidentialite’], [‘Règles du concours’, ‘/fr-ca/regles-du-concours’]]]], rights: ‘© 2026 Lodavo. Tous droits réservés.’, lang: ‘Langue et région’ }
+  : { tag: ‘Save money. Earn tickets. Win prizes.’, cols: [[‘Company’, [[‘About us’, ‘/en-ca/about-us’], [‘Security’, ‘/en-ca/security’], [‘Contact us’, ‘/en-ca/contact-us’]]], [‘Learn’, [[‘Blog’, ‘/en-ca/blog’], [‘Savings tools’, ‘/en-ca/tools’], [‘Editorial standards’, ‘/en-ca/editorial-standards’]]], [‘Legal’, [[‘Terms and Conditions’, ‘/en-ca/terms-and-conditions’], [‘Privacy Policy’, ‘/en-ca/privacy-policy’], [‘Contest Rules’, ‘/en-ca/contest-rules’]]]], rights: ‘© 2026 Lodavo. All rights reserved.’, lang: ‘Language and region’ };
+const langNames: Record<Locale, string> = { ‘en-ca’: ‘Canada · English’, ‘fr-ca’: ‘Canada · Français’ };
 
 const crumbs = [
   { name: 'Lodavo', item: abs(cfg.home) },

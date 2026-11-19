@@ -81,56 +81,6 @@
         }
       ],
       "verified_on": "2026-11-14"
-    },
-    {
-      "id": "powerball",
-      "name": "Powerball",
-      "name_fr": "Powerball",
-      "locales": ["en-us"],
-      "currency": "USD",
-      "price_per_play": 2,
-      "jackpot_odds": 292201338,
-      "draws_per_week": 3,
-      "draw_days": ["Monday", "Wednesday", "Saturday"],
-      "notes": "Base $2 play without Power Play. In Idaho and Montana the minimum purchase is $3 because Power Play is bundled.",
-      "sources": [
-        {
-          "label": "Powerball.com",
-          "url": "https://www.powerball.com/",
-          "confirms": ["price_per_play", "draw_days"]
-        },
-        {
-          "label": "Powerball.com, Prize chart",
-          "url": "https://www.powerball.com/powerball-prize-chart",
-          "confirms": ["jackpot_odds"]
-        }
-      ],
-      "verified_on": "2026-11-14"
-    },
-    {
-      "id": "megamillions",
-      "name": "Mega Millions",
-      "name_fr": "Mega Millions",
-      "locales": ["en-us"],
-      "currency": "USD",
-      "price_per_play": 5,
-      "jackpot_odds": 290472336,
-      "draws_per_week": 2,
-      "draw_days": ["Tuesday", "Friday"],
-      "notes": "$5 per play since the April 8, 2025 drawing, multiplier included.",
-      "sources": [
-        {
-          "label": "MegaMillions.com, How to play",
-          "url": "https://www.megamillions.com/How-to-Play.aspx",
-          "confirms": ["price_per_play", "jackpot_odds"]
-        },
-        {
-          "label": "MegaMillions.com, FAQs",
-          "url": "https://www.megamillions.com/FAQs.aspx",
-          "confirms": ["price_per_play", "draw_days"]
-        }
-      ],
-      "verified_on": "2026-11-14"
     }
   ],
   "support": {
@@ -146,14 +96,6 @@
       "url": "https://aidejeu.ca/",
       "operator": "Jeu : aide et référence, funded by Quebec's Ministère de la Santé et des Services sociaux; number confirmed on quebec.ca",
       "confirm_url": "https://www.quebec.ca/en/health/advice-and-prevention/alcohol-drugs-gambling",
-      "verified_on": "2026-11-14"
-    },
-    "en-us": {
-      "label": "National Problem Gambling Helpline",
-      "phone": "1-800-MY-RESET",
-      "url": "https://www.ncpgambling.org/help-treatment/",
-      "operator": "National Council on Problem Gambling. Note: 1-800-GAMBLER stopped being the national number on September 29, 2025.",
-      "confirm_url": "https://www.ncpgambling.org/helpline-stakeholder-faq/",
       "verified_on": "2026-11-14"
     }
   }
